@@ -56,7 +56,7 @@ header ul li:hover {
   }
 
   .nav-bar ul li:first-child {
-    padding-top: 3rem;
+    padding-top: 1.5rem;
   }
 
   .menu-icon {
@@ -94,6 +94,7 @@ header ul li:hover {
 
   .menuClass {
     right: 0;
+    position: absolute;
   }
 }
 
