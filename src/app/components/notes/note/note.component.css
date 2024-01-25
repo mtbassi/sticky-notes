@@ -2,12 +2,21 @@
   margin-top: 1.3rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: #151515;
   border: 2px solid #1f1f1f;
   padding: 1rem 2rem;
+  min-height: 20rem;
   box-sizing: border-box;
-  min-width: 100%;
   box-shadow: 8px 8px 0px #1f1f1f;
+}
+
+.note-g {
+  width: 40rem;
+}
+
+.note-p {
+  width: 24rem;
 }
 
 .note h2 {
@@ -21,6 +30,7 @@
 }
 
 .note .authorship {
+  font-style: italic;
   margin-bottom: 1rem;
 }
 

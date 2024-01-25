@@ -7,8 +7,15 @@ import { Component, Input } from '@angular/core';
 })
 export class NoteComponent {
   @Input() note = {
-    id: null,
-    content: 'Quem ta lendo me deve o button',
-    authorship: 'Bassi',
+    id: "",
+    content: "",
+    authorship: "",
   };
+
+  widthNote(): string {
+    if(this.note.content.length >= 160){
+      return 'note-g'
+    }
+    return 'note-p';
+  }
 }
