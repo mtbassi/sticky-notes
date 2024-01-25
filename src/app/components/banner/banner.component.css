@@ -1,0 +1,25 @@
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6rem;
+  background-color: var(--main-bg-color);
+}
+
+section .content {
+  max-width: 60%;
+}
+
+section .sub-title {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 105%;
+  margin-bottom: 1rem;
+}
+
+section img {
+  width: 60rem;
+  height: 30rem;
+  filter: invert(100%);
+}
