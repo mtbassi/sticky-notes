@@ -27,6 +27,7 @@ section .typed-element {
   min-height: 5rem;
   max-width: 70%;
   color: var(--third-color);
+  font-size: 0.9rem;
 }
 
 section .typed-element::after {
@@ -42,10 +43,11 @@ section .sub-title {
   font-size: 3rem;
   line-height: 105%;
   margin-bottom: 1rem;
+  max-width: 75%;
 }
 
 section .typed-element {
-  max-width: 80%;
+  max-width: 75%;
 }
 
 section .sub-title span {
@@ -68,7 +70,8 @@ section img {
     min-width: 100%;
   }
 
-  section .typed-element {
+  section .sub-title,
+  .typed-element {
     max-width: 100%;
   }
 
@@ -84,6 +87,12 @@ section img {
     font-size: 2.5rem;
     line-height: 105%;
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 610px) {
+  section .typed-element {
+    font-size: 0.8rem;
   }
 }
 

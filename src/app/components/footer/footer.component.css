@@ -10,6 +10,12 @@ footer li {
   justify-content: space-between;
   align-items: center;
   color: var(--third-color);
+  font-size: 0.9rem;
+}
+
+
+footer li .power-by {
+  font-weight: 400;
 }
 
 footer strong {
@@ -32,6 +38,12 @@ footer strong {
   }
   .footer li ul:first-child {
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .footer li {
+    font-size: 0.8rem
   }
 }
 

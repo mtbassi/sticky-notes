@@ -16,7 +16,7 @@
 }
 
 .container-list-notes h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -28,6 +28,7 @@
   border: none;
   margin-right: 1rem;
   cursor: pointer;
+  font-size: 0.9rem;
 }
 
 .container-list-notes .board {
@@ -41,9 +42,11 @@
   }
 }
 
-
 @media (max-width: 610px) {
   .container-list-notes h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+  .container-list-notes section button {
+    font-size: 0.8rem;
   }
 }

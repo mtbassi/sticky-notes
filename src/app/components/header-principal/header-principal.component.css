@@ -25,6 +25,7 @@ header li {
 
 header li a {
   color: var(--third-color);
+  font-size: 0.9rem;
   text-decoration: none;
 }
 
@@ -51,6 +52,10 @@ header li a:hover {
   }
 
   .header h1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+  }
+
+  header li a {
+    font-size: 0.8rem;
   }
 }
