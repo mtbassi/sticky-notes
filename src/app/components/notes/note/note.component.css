@@ -33,6 +33,7 @@
 .note .authorship {
   color: var(--third-color);
   font-style: italic;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 0.9rem;
 }
