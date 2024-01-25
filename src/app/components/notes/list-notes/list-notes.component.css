@@ -30,9 +30,20 @@
   cursor: pointer;
 }
 
+.container-list-notes .board {
+  flex-wrap: wrap;
+}
+
 @media (max-width: 840px) {
   .container-list-notes {
     padding: 1rem 3rem;
     background-image: url(../../../../assets/images/bg-notes-mobile.svg);
+  }
+}
+
+
+@media (max-width: 610px) {
+  .container-list-notes h2 {
+    font-size: 1.3rem;
   }
 }

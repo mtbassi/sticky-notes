@@ -1,0 +1,36 @@
+.note {
+  margin-top: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #151515;
+  border: 2px solid #1f1f1f;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  min-width: 100%;
+  box-shadow: 8px 8px 0px #1f1f1f;
+}
+
+.note h2 {
+  position: absolute;
+  font-size: 8rem;
+  color: var(--secondary-color);
+}
+
+.note .content {
+  margin-top: 6rem;
+}
+
+.note .authorship {
+  margin-bottom: 1rem;
+}
+
+.note .actions {
+  align-self: flex-end;
+}
+
+.note .actions button {
+  border: none;
+  margin-left: 1rem;
+  cursor: pointer;
+  background-color: #151515;
+}

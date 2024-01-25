@@ -9,6 +9,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { CreateNoteComponent } from './components/notes/create-note/create-note.component';
 import { FormsModule } from '@angular/forms';
 import { ListNotesComponent } from './components/notes/list-notes/list-notes.component';
+import { NoteComponent } from './components/notes/note/note.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,11 @@ import { ListNotesComponent } from './components/notes/list-notes/list-notes.com
     FooterComponent,
     BannerComponent,
     CreateNoteComponent,
-    ListNotesComponent
+    ListNotesComponent,
+    NoteComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

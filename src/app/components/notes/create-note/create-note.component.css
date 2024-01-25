@@ -60,6 +60,13 @@
   }
 }
 
+@media (max-width: 610px) {
+  .container-note .content h2 {
+    font-size: 1.3rem;
+  }
+}
+
+
 @media (max-width: 450px) {
   .container-note .content {
     padding: 1rem 2rem;
