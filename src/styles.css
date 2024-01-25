@@ -3,6 +3,17 @@
   padding: 0;
 }
 
+:root {
+  --main-bg-color: #171717;
+  --main-color: #f8f8f8;
+  --secondary-color: #986dff;
+  --third-color: #9ca3af;
+}
+
+body {
+  color: var(--main-color);
+}
+
 .ff-unbounded { font-family: 'Unbounded', sans-serif; }
 .ff-roboto-mono { font-family: 'Roboto Mono', monospace; }
 
