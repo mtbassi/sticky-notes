@@ -44,6 +44,10 @@ section .sub-title {
   margin-bottom: 1rem;
 }
 
+section .typed-element {
+  max-width: 80%;
+}
+
 section .sub-title span {
   font-weight: 400;
   color: var(--secondary-color);
