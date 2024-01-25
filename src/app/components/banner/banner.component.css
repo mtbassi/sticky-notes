@@ -55,6 +55,10 @@ section img {
     min-width: 100%;
   }
 
+  section .typed-element {
+    max-width: 100%;
+  }
+
   section img {
     display: none;
   }
