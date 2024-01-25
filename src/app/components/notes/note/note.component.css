@@ -27,11 +27,13 @@
 
 .note .content {
   margin-top: 6rem;
+  font-size: 0.9rem;
 }
 
 .note .authorship {
   font-style: italic;
   margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 .note .actions {
@@ -43,4 +45,11 @@
   margin-left: 1rem;
   cursor: pointer;
   background-color: #151515;
+}
+
+@media (max-width: 610px) {
+  .note .content,
+  .authorship {
+    font-size: 0.8rem;
+  }
 }
