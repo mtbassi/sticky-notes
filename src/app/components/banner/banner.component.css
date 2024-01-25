@@ -1,8 +1,11 @@
 @keyframes blink {
-  0%, 50%, 100% {
+  0%,
+  50%,
+  100% {
     opacity: 1;
   }
-  25%, 75% {
+  25%,
+  75% {
     opacity: 0;
   }
 }
@@ -12,7 +15,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 6rem;
+  padding: 1.5rem 6rem;
   background-color: var(--main-bg-color);
 }
 
@@ -47,11 +50,12 @@ section img {
   filter: invert(100%);
 }
 
-
-
 @media (max-width: 840px) {
   .banner {
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
+  }
+
+  .banner .content {
     min-width: 100%;
   }
 
@@ -60,6 +64,7 @@ section img {
   }
 
   section img {
+    width: 10px;
     display: none;
   }
 }
