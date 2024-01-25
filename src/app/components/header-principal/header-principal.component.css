@@ -17,36 +17,84 @@ header span {
   color: var(--secondary-color);
 }
 
-header li {
+header ul {
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
 }
 
-header li a {
+header ul li {
   color: var(--third-color);
   font-size: 0.9rem;
-  text-decoration: none;
+  list-style-type: none;
 }
 
-header li a:hover {
+header ul li:hover {
   color: var(--main-color);
+  cursor: pointer;
 }
 
 @media (max-width: 840px) {
   .header {
     padding: 1.5rem 3rem;
   }
+  .nav-bar {
+    position: absolute;
+    right: -16rem;
+    top: 4rem;
+    width: 12rem;
+    height: 100%;
+    background-color: var(--main-bg-color);
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+  }
+
+  .nav-bar ul li {
+    padding-left: 1rem;
+  }
+
+  .menu-icon {
+    display: inline-block;
+  }
+
+  .menu-icon:hover {
+    cursor: pointer;
+  }
+
+  .menu-icon span {
+    display: block;
+    width: 1.6rem;
+    height: 0.1rem;
+    background: var(--third-color);
+    transition: 0.2s ease-in-out;
+  }
+
+  .menu-icon span:nth-child(2) {
+    margin: 0.25rem 0;
+  }
+
+  .menu-icon-class span:nth-child(2) {
+    display: none;
+  }
+
+  .menu-icon-class span:nth-child(1) {
+    transform: rotate(40deg);
+  }
+
+  .menu-icon-class span:nth-child(3) {
+    transform: rotate(-39deg);
+    margin-top: -1.5px;
+  }
+
+  .menuClass {
+    right: 0;
+  }
 }
 
 @media (max-width: 610px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .header h1 {
-    margin-bottom: 1rem;
     font-size: 1.5rem;
   }
 

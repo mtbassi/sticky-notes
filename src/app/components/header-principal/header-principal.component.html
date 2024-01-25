@@ -2,10 +2,15 @@
   <section routerLink="/home" class="logo">
     <h1 class="ff-unbounded">StickyN<span>&#123; &#41;</span>tes</h1>
   </section>
-  <section class="nav-bar">
-    <li>
-      <ul routerLink="/notes" class="ff-roboto-mono"><a target="_blank" rel="noopener noreferrer">My notes</a></ul>
-      <ul routerLink="/home" class="ff-roboto-mono"><a target="_blank" rel="noopener noreferrer">About the project</a></ul>
-    </li>
+  <section class="menu-icon" [class.menu-icon-class]="menuIconVariable" (click)="openMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </section>
+  <section class="nav-bar" [class.menuClass]="menuVariable">
+    <ul>
+      <li routerLink="/notes" class="ff-roboto-mono">My notes</li>
+      <li routerLink="/home" class="ff-roboto-mono">About the project</li>
+    </ul>
   </section>
 </header>
