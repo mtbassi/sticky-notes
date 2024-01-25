@@ -7,6 +7,8 @@ import { HeaderPrincipalComponent } from './components/header-principal/header-p
 import { FooterComponent } from './components/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CreateNoteComponent } from './components/notes/create-note/create-note.component';
+import { FormsModule } from '@angular/forms';
+import { ListNotesComponent } from './components/notes/list-notes/list-notes.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { CreateNoteComponent } from './components/notes/create-note/create-note.
     HeaderPrincipalComponent,
     FooterComponent,
     BannerComponent,
-    CreateNoteComponent
+    CreateNoteComponent,
+    ListNotesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

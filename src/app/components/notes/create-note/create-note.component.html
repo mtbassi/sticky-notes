@@ -7,9 +7,10 @@
       <label for="note">Note</label>
       <textarea
         class="input textarea ff-roboto-mono"
-        placeholder="Enter your note"
         id="note"
         name="note"
+        placeholder="Enter your note"
+        [(ngModel)]="note"
       ></textarea>
       <label for="authorship" class="ff-roboto-mono">Authorship</label>
       <input
@@ -18,11 +19,12 @@
         id="authorship"
         name="authorship"
         placeholder="Enter the authorship or source"
+        [(ngModel)]="note"
       />
     </form>
     <div class="actions">
-      <button class="save">Save</button>
-      <button class="cancel">Cancel</button>
+      <button (click)="createNote()" class="save">Save</button>
+      <button (click)="discardNote()" class="cancel">Discard</button>
     </div>
   </section>
 </section>

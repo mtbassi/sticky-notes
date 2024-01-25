@@ -1,0 +1,37 @@
+.container-list-notes {
+  padding: 1.5rem 6rem;
+  background-color: var(--main-bg-color);
+  min-height: 100vh;
+  background-image: url(../../../../assets/images/bg-notes.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.container-list-notes section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container-list-notes h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.container-list-notes section button {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  min-width: 8rem;
+  padding: 1rem;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 840px) {
+  .container-list-notes {
+    padding: 1rem 3rem;
+  }
+}
