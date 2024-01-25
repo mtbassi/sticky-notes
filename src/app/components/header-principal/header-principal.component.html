@@ -9,8 +9,8 @@
   </section>
   <section class="nav-bar" [class.menuClass]="menuVariable">
     <ul>
-      <li routerLink="/notes" class="ff-roboto-mono">My notes</li>
-      <li routerLink="/home" class="ff-roboto-mono">About the project</li>
+      <li routerLink="/notes" class="ff-roboto-mono" (click)="openMenu()">My notes</li>
+      <li routerLink="/home" class="ff-roboto-mono" (click)="openMenu()">About the project</li>
     </ul>
   </section>
 </header>
