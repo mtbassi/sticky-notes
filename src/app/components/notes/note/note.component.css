@@ -6,7 +6,7 @@
   background-color: #151515;
   border: 2px solid #1f1f1f;
   padding: 1rem 2rem;
-  min-height: 20rem;
+  min-height: 18rem;
   box-sizing: border-box;
   box-shadow: 8px 8px 0px #1f1f1f;
 }
@@ -16,7 +16,7 @@
 }
 
 .note-p {
-  width: 24rem;
+  width: 18rem;
 }
 
 .note h2 {
@@ -47,9 +47,18 @@
   background-color: #151515;
 }
 
+
+@media (max-width: 680px) {
+  .note-g {
+    width: 18rem;
+  }
+
+}
+
 @media (max-width: 610px) {
   .note .content,
   .authorship {
     font-size: 0.8rem;
   }
 }
+

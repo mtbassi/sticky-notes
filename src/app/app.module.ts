@@ -10,6 +10,7 @@ import { CreateNoteComponent } from './components/notes/create-note/create-note.
 import { FormsModule } from '@angular/forms';
 import { ListNotesComponent } from './components/notes/list-notes/list-notes.component';
 import { NoteComponent } from './components/notes/note/note.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { NoteComponent } from './components/notes/note/note.component';
     ListNotesComponent,
     NoteComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -33,6 +33,7 @@
 
 .container-list-notes .board {
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 @media (max-width: 840px) {
