@@ -1,5 +1,29 @@
-<section class="container">
-  <header class="create-note">
-    <h2>Create Note</h2>
-  </header>
+<section class="container-note">
+  <section class="content">
+    <header class="create-note ff-unbounded">
+      <h2>Create Note</h2>
+    </header>
+    <form action="">
+      <label for="note">Note</label>
+      <input
+        type="text"
+        class="input ff-roboto-mono"
+        id="note"
+        name="note"
+        placeholder="Enter your note"
+      />
+      <label for="authorship" class="ff-roboto-mono">Authorship</label>
+      <input
+        type="text"
+        class="input ff-roboto-mono"
+        id="authorship"
+        name="authorship"
+        placeholder="Enter the authorship or source"
+      />
+    </form>
+    <div class="actions">
+      <button class="save">Save</button>
+      <button class="cancel">Cancel</button>
+    </div>
+  </section>
 </section>

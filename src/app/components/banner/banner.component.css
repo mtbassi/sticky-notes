@@ -44,6 +44,11 @@ section .sub-title {
   margin-bottom: 1rem;
 }
 
+section .sub-title span {
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
 section img {
   width: 60rem;
   height: 30rem;
