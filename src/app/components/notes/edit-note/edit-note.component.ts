@@ -1,14 +1,14 @@
-import { ActivatedRoute, Router } from '@angular/router';
-import { NoteService } from '../note/note.service';
-import { Note } from './../note/note';
 import { Component, OnInit } from '@angular/core';
+import { Note } from '../note/note';
+import { NoteService } from '../note/note.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
-  selector: 'app-delete-note',
-  templateUrl: './delete-note.component.html',
-  styleUrls: ['./delete-note.component.css'],
+  selector: 'app-edit-note',
+  templateUrl: './edit-note.component.html',
+  styleUrls: ['./edit-note.component.css']
 })
-export class DeleteNoteComponent implements OnInit {
+export class EditNoteComponent implements OnInit {
   note: Note = {
     id: 0,
     content: '',
@@ -28,15 +28,15 @@ export class DeleteNoteComponent implements OnInit {
     });
   }
 
-  deleteNote() {
+  editNote() {
     if (this.note.id) {
-      this.service.delete(this.note.id).subscribe(() => {
+      this.service.editNote(this.note).subscribe(() => {
         this.router.navigate(['/notes']);
       });
     }
   }
 
-  cancelDelete() {
+  cancelEdit() {
     this.router.navigate(['/notes']);
   }
 }

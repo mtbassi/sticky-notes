@@ -1,0 +1,30 @@
+<section class="container-edit">
+  <div class="modal">
+    <div class="modal-in">
+      <p class="ff-unbounded">Edit note</p>
+      <form action="">
+        <label for="note" class="ff-roboto-mono">Note</label>
+        <textarea
+          class="input textarea ff-roboto-mono"
+          id="note"
+          name="note"
+          placeholder="Enter your note"
+          [(ngModel)]="note.content"
+        ></textarea>
+        <label for="authorship" class="ff-roboto-mono">Authorship</label>
+        <input
+          type="text"
+          class="input ff-roboto-mono"
+          id="authorship"
+          name="authorship"
+          placeholder="Enter the authorship or source"
+          [(ngModel)]="note.authorship"
+        />
+      </form>
+      <div class="actions">
+        <button class="button-save" (click)="editNote()">Save</button>
+        <button class="button-cancel" (click)="cancelEdit()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</section>

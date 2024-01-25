@@ -12,6 +12,7 @@ import { ListNotesComponent } from './components/notes/list-notes/list-notes.com
 import { NoteComponent } from './components/notes/note/note.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DeleteNoteComponent } from './components/notes/delete-note/delete-note.component';
+import { EditNoteComponent } from './components/notes/edit-note/edit-note.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { DeleteNoteComponent } from './components/notes/delete-note/delete-note.
     ListNotesComponent,
     NoteComponent,
     DeleteNoteComponent,
+    EditNoteComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

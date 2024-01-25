@@ -4,7 +4,11 @@
   <p class="authorship">{{ note.authorship }}</p>
   <div class="actions">
     <button class="edit">
-      <img src="../../../../assets/images/edit-icon.svg" alt="Icon edit" />
+      <img
+        routerLink="/notes/edit/{{ note.id }}"
+        src="../../../../assets/images/edit-icon.svg"
+        alt="Icon edit"
+      />
     </button>
     <button class="trash">
       <img
