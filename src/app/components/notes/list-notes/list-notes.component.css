@@ -33,5 +33,6 @@
 @media (max-width: 840px) {
   .container-list-notes {
     padding: 1rem 3rem;
+    background-image: url(../../../../assets/images/bg-notes-mobile.svg);
   }
 }
