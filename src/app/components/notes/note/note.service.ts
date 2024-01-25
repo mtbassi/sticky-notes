@@ -16,6 +16,9 @@ export class NoteService {
   }
 
   createNote(note: Note): Observable<Note> {
+    if (note.authorship === null || note.authorship === '') {
+      note.authorship = 'Anonymous';
+    }
     return this.http.post<Note>(this.API, note);
   }
 
