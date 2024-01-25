@@ -39,12 +39,6 @@ header li a:hover {
   }
 }
 
-@media (max-width: 750px) {
-  .header h1 {
-    margin-bottom: 1rem;
-  }
-}
-
 @media (max-width: 610px) {
   .header {
     flex-direction: column;
@@ -52,6 +46,7 @@ header li a:hover {
   }
 
   .header h1 {
+    margin-bottom: 1rem;
     font-size: 1.5rem;
   }
 
