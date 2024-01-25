@@ -7,11 +7,15 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class NoteService {
-  private readonly API = 'http://localhost:3000/notes';
+  private readonly API = 'https://json-server-henna-nu.vercel.app/notes';
 
   constructor(private http: HttpClient) {}
 
   getAll(): Observable<Note[]> {
     return this.http.get<Note[]>(this.API);
+  }
+
+  createNote(note: Note): Observable<Note> {
+    return this.http.post<Note>(this.API, note);
   }
 }

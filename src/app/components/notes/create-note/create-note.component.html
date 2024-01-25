@@ -10,7 +10,7 @@
         id="note"
         name="note"
         placeholder="Enter your note"
-        [(ngModel)]="note"
+        [(ngModel)]="note.content"
       ></textarea>
       <label for="authorship" class="ff-roboto-mono">Authorship</label>
       <input
@@ -19,7 +19,7 @@
         id="authorship"
         name="authorship"
         placeholder="Enter the authorship or source"
-        [(ngModel)]="note"
+        [(ngModel)]="note.authorship"
       />
     </form>
     <div class="actions">
