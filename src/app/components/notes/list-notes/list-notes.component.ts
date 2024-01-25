@@ -12,7 +12,7 @@ export class ListNotesComponent implements OnInit {
   constructor(private service: NoteService) {}
   ngOnInit(): void {
     this.service.getAll().subscribe((listNotes) => {
-      this.listNotes = listNotes;
+      this.listNotes = listNotes.reverse();
     });
   }
 }
