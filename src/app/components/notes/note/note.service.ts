@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class NoteService {
-  private readonly API = 'https://json-server-henna-nu.vercel.app/notes';
+  private readonly API = 'https://json-server-cvrq.onrender.com/notes';
 
   constructor(private http: HttpClient) {}
 
@@ -17,5 +17,15 @@ export class NoteService {
 
   createNote(note: Note): Observable<Note> {
     return this.http.post<Note>(this.API, note);
+  }
+
+  findById(id: number): Observable<Note> {
+    const url = `${this.API}/${id}`;
+    return this.http.get<Note>(url);
+  }
+
+  delete(id: number): Observable<Note> {
+    const url = `${this.API}/${id}`;
+    return this.http.delete<Note>(url);
   }
 }

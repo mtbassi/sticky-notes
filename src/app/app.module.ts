@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { ListNotesComponent } from './components/notes/list-notes/list-notes.component';
 import { NoteComponent } from './components/notes/note/note.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DeleteNoteComponent } from './components/notes/delete-note/delete-note.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     CreateNoteComponent,
     ListNotesComponent,
     NoteComponent,
+    DeleteNoteComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
