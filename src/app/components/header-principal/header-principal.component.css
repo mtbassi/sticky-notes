@@ -43,7 +43,7 @@ header ul li:hover {
     right: -16rem;
     top: 4rem;
     width: 12rem;
-    height: 20%;
+    height: 15%;
     background-color: var(--main-bg-color);
   }
 
@@ -52,11 +52,11 @@ header ul li:hover {
   }
 
   .nav-bar ul li {
-    padding-left: 1rem;
+    padding-left: 1.8rem;
   }
 
   .nav-bar ul li:first-child {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
   }
 
   .menu-icon {
